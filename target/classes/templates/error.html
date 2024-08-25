@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--favicon-->
+	<link rel="icon" th:href="@{/assets/images/favicon.png}" type="image/png" />
+		
+		<!-- Bootstrap CSS -->
+		<link th:href="@{/assets/css/bootstrap.min.css}" rel="stylesheet">
+		<link th:href="@{/assets/css/bootstrap-extended.css}" rel="stylesheet">
+	
+		<link th:href="@{/assets/css/app.css}" rel="stylesheet">
+
+		<title>Error</title>
+	</head>
+
+<body class="bg-theme bg-theme1">
+	<!-- wrapper -->
+	<div class="wrapper">
+		
+		<div class="error-404 d-flex align-items-center justify-content-center">
+			<div class="container">
+				<div class="card">
+					<div class="row g-0">
+						<div class="col-xl-5">
+							<div class="card-body p-4">
+								
+								<h2 class="font-weight-bold display-4">Sorry, unexpected error</h2>
+								<div class="mt-5">	
+									<a th:href="${#httpServletRequest.contextPath}" class="btn btn-lg btn-light px-md-5 radius-30">Go Home</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-7">
+							<img th:src="@{/assets/images/errors-images/505-error.png}" class="img-fluid" alt="">
+						</div>
+					</div>
+					<!--end row-->
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	<!-- end wrapper -->
+
+</body>
+
+</html>
